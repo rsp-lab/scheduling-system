@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+     <persistence-unit name="sutipPU" transaction-type="RESOURCE_LOCAL">
+		 <provider>org.hibernate.ejb.HibernatePersistence</provider>
+		 <jta-data-source>sutip</jta-data-source>
+		 <class>pl.com.pk.sutip.domain.Account</class>
+		 <class>pl.com.pk.sutip.domain.Role</class>
+		 <class>pl.com.pk.sutip.domain.Event</class>
+		 <class>pl.com.pk.sutip.domain.EventType</class>
+		 <class>pl.com.pk.sutip.domain.Message</class>
+		 <class>pl.com.pk.sutip.domain.Participation</class>
+		 <class>pl.com.pk.sutip.domain.Interval</class>
+		 <properties>
+              <property name="hibernate.hbm2ddl.auto" value="update"/>
+         </properties>
+	 </persistence-unit>
+</persistence>
+
