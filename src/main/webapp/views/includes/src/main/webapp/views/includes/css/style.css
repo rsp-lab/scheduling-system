@@ -1,0 +1,570 @@
+
+
+/* ----------------------- Overall -------------------------------------------------------------- */
+html, body, div
+{ 
+    border: 0px none;
+    padding: 0px;
+    margin: 0px;
+    
+    font-family: Arial,Helvetica;
+    font-size: 12pt;
+    font-weight: normal;
+    
+    vertical-align: baseline;
+    color: rgb(0, 0, 0);
+    
+    text-align: center;
+}
+
+body
+{
+    background-image: url("images/background.png");
+}
+
+html
+{ 
+    height: 100%
+}
+
+h1
+{
+    font-family: Verdana;
+    font-size: 18pt;
+    font-weight: normal;
+    
+    color: rgb(0, 0, 0);
+}
+
+h2, p
+{
+    font-family: Verdana;
+    font-size: 12pt;
+    font-weight: normal;
+    
+    color: rgb(0, 0, 0);
+}
+
+/* ----------------------- DIV's --------------------------------------------------------------- */
+div.top_background
+{
+    height: 121px;
+    background: url("images/nav_background.png") repeat scroll 0% 0% transparent;
+    background-color: transparent;
+    background-image: url("images/nav_background.png");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+
+div.top
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.nav_form
+{
+    height: 121px;
+    background-color: transparent;
+    /* background-image: url("images/login_form.png"); */
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    
+    color: #D9DDE0;
+}
+
+div.link_background
+{
+    height: 35px;
+    background: url("images/link_background.png") repeat scroll 0% 0% transparent;
+    background-color: transparent;
+    background-image: url("images/link_background.png");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+
+div.link
+{
+    width: 1000px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#wrapper
+{
+    text-align: center;
+    border: 1px solid black;
+}
+
+div#wrapper div, div#wrapper table
+{
+    font-family: Verdana;
+    font-size: 12pt;
+    font-weight: normal;
+    float: left;
+    
+    border: 0px none;
+    padding: 2px;
+}
+
+div#map_canvas
+{
+    text-align: center;
+    width: 500px;
+    height: 407px;
+}
+
+div#layer
+{
+    background: url("images/popup.png") repeat scroll 0% 0% transparent;
+    background-color: transparent;
+    background-image: url("images/popup.png");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    
+    position:absolute;
+    left: 0;
+    top: 0;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    /*background: #ececec;
+    border: 1px solid; */
+}
+
+div#popupLayer
+{
+    background: url("images/background.png") repeat scroll 0% 0% transparent;
+    background-color: transparent;
+    background-image: url("images/background.png");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    
+    border:1px solid black;
+    border-radius:10px;
+    
+    width: 490px;
+    
+    -webkit-box-shadow: 0 1px 3px #aaa;
+    -moz-box-shadow: 0 1px 3px #aaa;
+    box-shadow: 0 1px 3px #aaa;
+    
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+div#errorList
+{
+    color: red;
+}
+
+div#tabs
+{
+    width: 1250px;
+    height: 600px;
+    
+    font-size: 12px;
+    font-family: Verdana;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#scheduleTabs
+{
+    width: 1250px;
+    
+    font-size: 12px;
+    font-family: Verdana;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#professors, div#courses, div#rooms, div#groups, div#classes
+{
+    text-align: center;
+    padding: 1px;
+}
+
+/* ----------------------- IMAGE --------------------------------------------------------------- */
+
+div.link img
+{
+    float: left;
+}
+
+a img
+{
+    border:0;
+} 
+
+/* ----------------------- TABLE --------------------------------------------------------------- */
+
+table, td, tr, th
+{
+    border: 0px none;
+    padding: 0px;
+    margin: 0px;
+    
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+td
+{
+    text-align: right;
+}
+
+td.center
+{
+    text-align: center;
+}
+
+td.left
+{
+    text-align: left;
+}
+
+/*
+table#submitTable, table#eventTable, table#general, table#formTable
+{
+    margin-left:auto; 
+    margin-right:auto;
+}
+*/
+table#submitTable, table#formTable
+{
+    border: 0px none;
+    color: black;
+    font: bold 12px verdana;
+}
+
+table#eventTable, table#list, table#general, table#schedule
+{
+    background-image: -moz-linear-gradient(bottom, rgb(191,191,214) 35%, rgb(154,150,179) 68%, rgb(112,111,125) 100%);
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: black;
+    font: normal 12px verdana;
+}
+
+table#submitTable
+{
+    width: 960px;
+    height: 30px;
+}
+
+table#formTable
+{
+    width: 1200px;
+    height: 30px;
+    /* border: 1px solid; */
+}
+/*
+table#formTable td, table#formTable th
+{
+    border: 1px solid black;
+}
+*/
+table#eventTable
+{
+    width: 960px;
+    height: 407px;
+}
+
+table#list
+{
+    width: 1200px;
+}
+
+table#general
+{
+    width: 480px;
+}
+
+table#schedule
+{
+    width: 960px;
+}
+
+/* caption */
+table#eventTable caption, table#list caption, table#general caption, table#schedule caption
+{ 
+    border: 0px none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 6px 4px 8px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    font-size: 16px;
+    font-family: Verdana;
+}
+
+/* overall td, th */
+table#eventTable td, table#eventTable th, table#submitTable td, table#list td, table#list th, table#general td, table#general th, table#schedule td, table#schedule th
+{ 
+    color: black;
+    padding: .05em;
+}
+
+/* th */
+table#eventTable th, table#list th, table#list th a:link, table#list th a:hover, table#list th a:active, table#list th a:visited, table#general th, table#schedule th
+{ 
+    background: #212125 repeat-x;
+    color: white;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* tr */
+table#eventTable tr, table#list tr, table#general tr
+{ 
+    border: 1px dotted gray;
+}
+
+table#schedule tr, table#schedule td
+{
+    border: 1px dotted black;
+}
+
+input#short
+{
+    width: 30px;
+    padding: .1em;
+    
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+div#intervalList input
+{
+    width: 75px;
+    padding: .1em;
+    
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+input#mid
+{
+    width: 150px;
+    padding: .1em;
+    
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+input#long
+{
+    width: 300px;
+    padding: .1em;
+    
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+/* row hover */
+table#eventTable tr:hover, table#list tr:hover, table#general tr:hover, table#schedule tr:hover
+{ 
+    background: #99BCBF;
+    border: 1px solid #03476F;
+    color: #000000;
+}
+
+/* td links */
+table#list td a:link, table#list td a:hover, table#list td a:active, table#list td a:visited
+{ 
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    text-decoration: none;
+    color: blue;
+}
+
+/* ----------------------- INPUT --------------------------------------------------------------- */
+
+textarea
+{
+    resize: none;
+    height: 190px;
+}
+
+select
+{
+    margin: 0px;
+    
+    background: -moz-linear-gradient(bottom, #414248, #2D2E32) !important;
+    background: linear-gradient(bottom, #414248, #2D2E32) !important;
+    border: 1px solid #404040 !important;
+    border-top-color: #404040 !important;
+    border-bottom-color: #404040 !important;
+    border-radius: 3px 3px 3px 3px !important; 
+    box-shadow: inset 0px 1px 2px #333; 
+    
+    color:#D9DDE0 !important;
+}
+
+select#role
+{
+    width: 100%;
+    
+    font-size: 11px;
+    font-family: Verdana;
+    
+    margin: 0px;
+    padding: 0.2em 0.2px 0.2em 0.2em;
+    
+    background: -moz-linear-gradient(bottom, #414248, #2D2E32) !important;
+    background: linear-gradient(bottom, #414248, #2D2E32) !important;
+    border: 1px solid #1D1C20 !important;
+    border-top-color: #1D1C20 !important;
+    border-bottom-color: #1D1C20 !important;
+    border-radius: 2px 2px 2px 2px !important; 
+    box-shadow: inset 0px 1px 2px #333; 
+    
+    color: #D9DDE0 !important;
+}
+
+select#create
+{
+    width: 100%;
+    
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+option
+{
+    background: #2D2E32;
+}
+
+input[type="button"], input[type="submit"]
+{ 
+    /* float: right; */
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+input[type="text"], input[type="password"], textarea
+{
+    width: 100%;
+    
+    margin: 0px;
+    padding: 0.2em 0px 0.2em 0.2em;
+
+    background: -moz-linear-gradient(bottom, #414248, #2D2E32) !important;
+    background: linear-gradient(bottom, #414248, #2D2E32) !important;
+    border: 1px solid #1D1C20 !important;
+    border-top-color: #1D1C20 !important;
+    border-bottom-color: #1D1C20 !important;
+    border-radius: 5px 5px 5px 5px !important; 
+    box-shadow: inset 0px 1px 2px #333; 
+    
+    color: #D9DDE0 !important;
+    
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+input[type="text"]:hover, input[type="text"]:focus, input[type="text"]:active,
+input[type="password"]:hover, input[type="password"]:focus, input[type="password"]:active,
+textarea:hover, textarea:focus, textarea:active 
+{
+    -moz-box-shadow: inset 0px 1px 2px #000;
+    box-shadow: inset 0px 1px 2px #000;
+}
+
+table#schedule input:hover, table#schedule input:focus, table#schedule input:active
+{
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.ui-button-text, .ui-widget, .ui-widget, .ui-button
+{
+    font-size: 11px;
+    font-family: Verdana;
+}
+
+/* ----------------------- LINK --------------------------------------------------------------- */
+
+a#register:link
+{
+    text-decoration: none;
+    color: blue;
+    
+    font-size: 14px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+a#register:visited
+{
+    text-decoration: none;
+    color: blue;
+    
+    font-size: 14px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+a#register:active
+{
+    text-decoration: none;
+    color: blue;
+    
+    font-size: 14px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+a#register:hover
+{
+    text-decoration: none;
+    color: #D9DDE0;
+    
+    font-size: 14px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+
+
+
+
