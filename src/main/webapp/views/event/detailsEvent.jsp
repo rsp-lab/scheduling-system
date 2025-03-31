@@ -10,8 +10,6 @@
         <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/views/includes/css/jquery-ui.css" />
         <script src="<%= request.getContextPath() %>/views/includes/js/jquery.min.js"></script>
         <script src="<%= request.getContextPath() %>/views/includes/js/jquery.ui.min.js"></script>
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAYEfUIf2Kj5AnnczPVzRLYN-m4eVkn1Rw&sensor=false"></script>
-        <script type="text/javascript" src="<%= request.getContextPath() %>/views/includes/js/googlemaps.js" ></script>
         <script type="text/javascript" src="<%= request.getContextPath() %>/views/includes/js/popup.js" ></script>
         <title><tag:message code="app.createEvent"/></title>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
