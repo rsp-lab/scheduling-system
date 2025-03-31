@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- reloadable + antiResourceLocking dodane na potrzeby maven goal -> tomcat:redeploy -->
+<Context antiJARLocking="true" antiResourceLocking="true" path="" reloadable="true"/>
